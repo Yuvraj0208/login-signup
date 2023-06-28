@@ -14,9 +14,6 @@
         "src": "/(.*)",
         "dest": "/manage.py"
       }
-    ],
-    "dependencies": {
-      "example-package": "1.0.0"
-    }
+    ]
   }
   
