@@ -79,7 +79,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'djongo',
         'CLIENT': {
-            'host': 'mongodb+srv://syuvraj6111:Syuvraj61@yuvicluster.krvmveu.mongodb.net/',
+            'host': 'mongodb+srv://syuvraj6111:Syuvraj61@yuvicluster.krvmveu.mongodb.net/?retryWrites=true&w=majority',
         }
     }
 }
