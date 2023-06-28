@@ -20,13 +20,16 @@ urlpatterns = [
     path('admin/', admin.site.urls),
 ]
 
-from authentication.views import login_view, signup_view
+from django.contrib import admin
 from django.urls import path, include
 from django.views.generic import RedirectView
 
+from authentication.views import login_view, signup_view
+
 urlpatterns = [
-     path('', RedirectView.as_view(url='users/signup')),
+    path('admin/', admin.site.urls),
     path('users/signin', login_view, name='signin'),
     path('users/signup', signup_view, name='signup'),
+    path('', RedirectView.as_view(url='users/signup')),
 ]
 
