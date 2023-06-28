@@ -1,12 +1,22 @@
 {
     "builds": [
       {
-        "src": "manage.py",
+        "src": "/(.*)",
         "use": "@vercel/python"
       }
     ],
+    "env": {
+      "DJANGO_SETTINGS_MODULE": "YUVI.settings",
+      "EXAMPLE_ENV_VARIABLE": "example value"
+    },
     "routes": [
-      { "src": "/(.*)", "dest": "/manage.py" }
-    ]
+      {
+        "src": "/(.*)",
+        "dest": "/manage.py"
+      }
+    ],
+    "dependencies": {
+      "example-package": "1.0.0"
+    }
   }
   
