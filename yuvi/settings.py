@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-%f)#7+$#-$3(0t1e=!hse00)n8^eldk8t)cjlp)-o!_m-a$p%e
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['yuvilogin.onrender.com']
 
 
 # Application definition
